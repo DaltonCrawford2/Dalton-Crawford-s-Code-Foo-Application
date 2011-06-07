@@ -1,0 +1,231 @@
+
+
+1. PENNIES ON GOLDEN GATE BRIDGE
+
+
+
+	First and foremost, as a disclaimer I would like to note that I carried through this question with the thought of using the 
+dimensions of the Golden Gate Bridge [GGB] but upon a flat plane. Before assessing the question, I of course need the dimensions 
+of both the Golden Gate and a Penny. 
+
+	thanks to goldengatebridge.org/research/factsGGBDesign.php, I have found that the GGB's total width is 90Ft or 27m; and
+that the total length [from abutment to abutment] is 8,981ft or 2,737m. a random google search returned to me that a penny has a
+diameter of .75in or 19mm.
+
+	From here, in my perfect world where I seem to be correct, I see an easy correlation between this problem and a simple 
+multiplication equation. Moreover, a question that might be reminiscent of a "Find the area of a rectangle/square." Now supposing 
+i am going in the correct direction, the next thing to do is treat the dimensions of the Golden Gate as a usual Length and Width; 
+next I decided to find how many pennies would line along the perimeter, more importantly how many pennies lie along one of
+the longer sides and one of the shorter sides ... so what do I do? thats right kids, time for MATH!
+
+	But wait young and confused engineering hopeful! you have conversions and different measuring systems beyond that.
+Well, I at first thought to do the work for both, but ran into some trouble [discrepancies in amount]. But since I love you IGN, I
+will continue as planned at the cost of looking dumb [as i probably already do].
+
+
+First, the math in METERS ... 
+[Conversion: 1000mm is equal to 1m]
+
+Width
+GGB Width = 27m
+A Penny's Diameter = 19mm
+
+What I did here was first convert the Golden Gate's width from meters into milimeters by multiplying the width by 1000, then taking
+the product and dividing it by the penny's diameter ... praying that the answer of that brought me the number a pennies needed for
+later step ...
+
+27 * 1000 = 27000
+27000 / 19 = 1,421
+
+
+I shall need 1,421 after i complete the next [but same] step for the ... 
+
+Length
+GGB Length = 2,737
+A Penny's Diameter = 19mm
+
+I use the same method of calculations here
+
+2,737 * 1000 = 2,737,000
+2,737,000 / 19 = 144,052
+
+
+Now I multiply the number I got for the width and the number I got for the length
+
+
+1,421 * 144,052 = 204,697,892 [roughly about]
+
+
+
+So if my line of thinking is correctand i use the metric measurements it would take around 204,697,892 pennies to fill the Golden Gate.
+
+
+using FEET ... ?
+[Conversion: 1Ft is equal to 12in]
+
+Width
+90 * 12 = 1080
+1080 / .75 = 1,440
+
+Length
+8,981 * 12 = 107,772
+107,772 / .75 = 143,696
+
+
+1,440 * 143,696 = 206,922,240 [Roughly about] 
+
+If i use feet then my calculations return an amount of 206,922,240 Pennies fitting on the Golden Gate without overlapping.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Three Picture sizes with a 16:9Aspect Ratio
+
+
+
+	Truth be told, I am not as well versed in aspect ratios and the such. However prior to submitting this, i spent quite an 
+amount of time studying and researching the topic. Amongst my findings, I found the more commonly used 16:9 dimensions ...
+
+1024 x 576	which had a factor of 64
+1280 x 720	which had a factor of 80
+1600 x 900	which had a factor of 100
+1920 x 1080	which had a factor of 120
+2560 x 1440	which had a factor of 160
+3840 x 2160	which had a factor of 240
+
+	From there with hopes to learn of something that might be of more use to me, I visted to IGN.com! No i'm not making kissy face,
+but i did look at certain pictures you guys had posted on the site and found an Erica Ocampo [kissy face there] picture with a dimension
+set of 1024 x 685, but when performing the same mathematical opperation instead of a common factor, i reached a 64 x 76.1 reading.
+Tried another, 323 x 482 = 20.2 x 53.6 ... then i thought "maybe if i switch the values" ... so in other words: 482 x 323 = 30.1 x 38.9.
+
+	Now seeing as how i am unsure and drawing a slight blank, only thing left to do is make educated guesses at the sizes using 
+math ...
+
+My "answers" were arrived by taking 1920 x 1080 with a factor of 120 [seeing as how there are 12in wide increments] and adding values 
+of 12 or values divisible by 12 ...
+
+2304 x 1296
+1344 x 756
+2112 x 1188
+
+... ... ... ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Knight on a Chessboard
+
+	Thanks to an episode of Batman: The Animated Series, it was revealed to me once that a knight can cover an entire chessboard
+in sixty-four turns [the same amount as the number of squares] without touching any square a repeating time.
+
+
+My "CODE"
+
+
+
+
+*First state Variables
+
+Int_Num_of_Turns as Integer
+Int_Num_of_Spaces_Covered as Integer
+
+Int_Num_of_Turns = 1
+Int_Num_of_Spaces_Covered = 1
+
+Do
+   * Barring in mind the rules and restrictions of moving a knight while playing chess, proceed with moving knight for turn
+
+   Int_Num_of_Turns += 1
+
+   * Let's assume for the sake of the argument, that spaces covered once are unavailable afterwards
+
+   If "knight.Location = Changed" Then
+      Int_Num_of_Spaces_Covered += 1
+   Else
+      End Program.
+   End If
+
+Until Int_Num_of_Spaces_Covered = 64
+
+If Int_Num_of_Spaces_Covered = Int_Num_of_Turns Then
+   Display("The minimum amount of moves it takes to move a knight around a chessboard, is " & Int_num_of_Turns.ToString & ".")
+Else
+   Display("I have failed you IGN D=")
+
+END PROGRAM
+
+
+
+
+
+
+	Regarding the Graph, as i will send as an attachment enclosed in the email concealing the link to the repository ...
+seeing as how it is a one-to-one move set if executed correctly, it should come accross as a linear graph starting at the origin
+(0, 0) and rising with a slope of 1, ascending to the top right corner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Why do you need IGN and why does IGN need you?
+
+	Before I end this journey of growth, i would love to thank you from the bottom of my heart IGN. I read articles on ign.com
+every monday-friday as it is my first website of the day unless something is of more dire immediacy. And more thanks for welcoming 
+me into the office for the June 3rd IGN FIRST FRIDAY Tour. 
+
+	I feel that i need IGN because being a budding Computer ENgineer who loves gaming, movies, gear and who can forget babes,
+I would be in a position that only has room for success. to learn coding from IGN who happens to usually be my first source of 
+information [in certain cases] anyway would be the dream opportunity for me. Engineering aside, IGN sets the stage for creativity to
+flow endlessly. and according to compliments from others [trying to avoid being arogant here] I tend to be a creative person, as well
+as critical thinker, if properly educated ... in other words, one could say IGN could help me obtain a better ME while working for a 
+company I have already been a fan of for years. Plus one could take such vital information IGN has to teach and utilize it for years
+and opportunities to come.
+
+	On the other hand, IGN could possibly benefit from having me on board. I am bred for collaborative work being one who performed
+in Concert Band & Drumline, providing a portion aiding to the overall product, maybe the musician in me but blending in where needed is a 
+trait i'm used to letting take its course. Furthermore, the "mArketability" sky rockets for I have a past in art [went to Academy of Art in 2004
+for photography/Photoshope & Comic Book Design], I Have been praised for my writting ability [do not ask me why], I am an avid learner meaning
+learning is something i do find fun. I love learning languages [computer and spoken], I am "Self Taught" when it comes to playing the Piano
+and guitar ... so any lessons i could pick up while at IGN would be a pleasurable experience as opposed to a chore or an obsticle in the way
+of getting a pay check. 
+
+	As i told an editor while on my tour of the IGN studios, I'd do anything to work at IGN even be a doorman yelling out
+"ACCESS DENIED!" but as I was soon to leave Code-Foo was brought to my attention and it was highly suggested by Jennie Fissel that i submit
+an entry. Figuring i'd do something with my life, thought it'd be awesome to at least try to get it. And Regardless of the result I am extremely
+grateful for the chance to learn from the great people at IGN. Thank You, and God Bless
+
+- Dalton Bruce Crawford II
